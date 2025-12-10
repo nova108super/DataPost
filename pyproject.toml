@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "foo"                    # Название проекта
+version = "0.0.1"              # Версия проекта
+description = ""                # Описание (пустое)
+authors = ["alexNova"]
+license = "MIT"                # Лицензия
+readme = "README.md"           # Файл README
+package-mode = false           # Режим пакета: false = это приложение, а не библиотека
+
+[tool.poetry.urls]
+"Homepage" = ""
+"Bug Tracker" = ""
+"PyPi" = ""
+
+[build-system]
+requires = ["poetry-core"]     # Зависимости для сборки
+build-backend = "poetry.core.masonry.api"  # Бэкенд для сборки
+
+[tool.poetry.dependencies]
+python = "≥3.12.1,<3.13"      # Версия Python: от 3.12.1 до 3.13 (не включая)
+pandas = "^2.2.3"             # Библиотека для анализа данных
+Faker = "^33.3.1"             # Генератор фейковых данных
+SQLAlchemy = "^2.0.37"        # ORM для работы с БД
+psycopg2 = "^2.9.10"          # Адаптер PostgreSQL для Python

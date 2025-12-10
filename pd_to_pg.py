@@ -34,7 +34,7 @@ df = pd.DataFrame(list_of_dict)
 
 df.to_sql(
     name='users',
-    con=
+    con=,
     if_exists='append',
     index=False,
 )
